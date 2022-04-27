@@ -55,17 +55,19 @@
 			<div class="sidebar">
 				<div class="sidebar__inner">
 					<section class="sidebar__header">
-						<h3 class="">Estigmas e discriminação</h3>
-						<h6>em IST,HIV/Aids, Hepatites Virais, Micoses Endêmicas, Turbeculose e Hanseníase</h6>
+						<h1 class="h3">
+							Estigmas e discriminação<br />
+							<span class="h6">em IST,HIV/Aids, Hepatites Virais, Micoses Endêmicas, Turbeculose e Hanseníase</span>
+						</h1>
 					</section>
 					<hr />
 					<section class="sidebar__section py-2">
 						<a href="../../index.html" class="sidebar__btn"> <i class="bi-house-door mr-2"></i>Página inicial </a>
 					</section>
-					<hr />
+					<!-- <hr />
 					<section class="sidebar__section py-2">
 						<a href="../apresentacao.html" class="sidebar__btn"> <i class="bi-flag mr-2"></i>Boas-vindas ao Módulo 1 </a>
-					</section>
+					</section> -->
 					<hr />
 					<nav class="sidebar__section sidebar__section--contrast">
 						<!-- <h6 class="">Módulo 1</h6> -->
@@ -74,7 +76,7 @@
 							<div>
 								<a href="inicio.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Sobre esta aula</span></a>
 
-								<a href="topico1.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Introdução</span></a>
+								<a href="topico1.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Início da aula</span></a>
 
 								<a href="topico2.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Estigma: aspectos históricos e suas implicações</span></a>
 
@@ -102,9 +104,9 @@
 						<a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-creditos"> <i class="bi bi-list-ul mr-2"></i> Créditos </a>
 					</section>
 					<hr />
-					<section class="sidebar__section py-4">
+					<!-- <section class="sidebar__section py-4">
 						<img src="../../images/OHS-logo.png" alt="Observatório História & Saúde" width="60%" />
-					</section>
+					</section> -->
 				</div>
 			</div>
 			<div class="content">
@@ -116,10 +118,6 @@
 									<div class="col-12 col-md-10 col-lg-7 col-xl-6 offset-xl-2 text-left">
 										<!-- <h3>Módulo 1</h3>
 										<h1 class="m-0">Bases conceituais​</h1> -->
-									</div>
-									<div class="col-lg-4 position-relative">
-										<img class="image1 d-none d-lg-block p-xl-3" src="../../images/modulo1/header-foto.png" alt="Ilustração representando diferentes pessoas, formando um mosaico." />
-										<span class="image3"></span>
 									</div>
 								</div>
 							</div>
@@ -146,66 +144,55 @@
 							<div class="row justify-content-center mb-5">
 								<div class="col-12 col-md-10 col-lg-8">
 									<!-- Accordion -->
-                                    <div id="accordionExample" class="accordion">
+									<div id="accordionExample" class="accordion">
+										<!-- Accordion item 1 -->
+										<div id="headingOne" class="accordion__header">
+											<a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative collapsible-link py-2">Preconceito</a>
+										</div>
+										<div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse">
+											<div class="card-body p-4">
+												<p class="font-weight-light m-0">Consiste em uma atitude de evitar um sujeito ou um grupo em função da atribuição de um valor a determinadas características. O preconceito envolve o pré-julgamento de uma pessoa pela pressuposição de que é possível conhecê-la e hostilizá-la apenas a partir de alguma característica que ela possui ou apresenta.</p>
 
-                                        <!-- Accordion item 1 -->
-                                        <div id="headingOne" class="accordion__header">
-                                            <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                                aria-controls="collapseOne"
-                                                class="d-block position-relative collapsible-link py-2">Preconceito</a>
-                                        </div>
-                                        <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample"
-                                            class="collapse">
-                                            <div class="card-body p-4">
-                                                <p class="font-weight-light m-0">Consiste em uma atitude de evitar um sujeito ou um grupo em função da atribuição de um valor a determinadas características. O preconceito envolve o pré-julgamento de uma pessoa pela pressuposição de que é possível conhecê-la e hostilizá-la apenas a partir de alguma característica que ela possui ou apresenta.</p>
+												<p>Embora seja apoiado num juízo de valor de quem está julgando, e seja justificado por crenças morais prevalentes na sociedade, nem sempre leva a desqualificação social do outro por não perceber que está sendo vítima de preconceito.</p>
 
-                                                <p>Embora seja apoiado num juízo de valor de quem está julgando, e seja justificado por crenças morais prevalentes na sociedade, nem sempre leva a desqualificação social do outro por não perceber que está sendo vítima de preconceito.</p>
+												<!-- Box de Para Refletir -->
+												<div class="card-box card border-0 shadow my-5">
+													<div class="box-quote">
+														<h5><i class="box-quote__icone bi bi-chat-dots" data-fa-transform="grow-25" aria-hidden="true"></i>Para Refletir</h5>
+														<div class="boxes-content">
+															<p>Segundo o psicólogo norte americano Gordon Allport (1954) a essência do preconceito reside em supor que é possível conhecer o outro a partir de uma característica, e que todos os portadores daquela característica são iguais. Cabe então indagar sobre a origem do traço que institui a diferença, já que todos somos iguais e diferentes ao mesmo tempo. O que faria um determinado traço produzir a sensação de uma diferença que impede o convívio e o reconhecimento? E por que esta diferença, produzida a partir de critérios mais imaginários que reais, provocaria sentimentos de hostilidade e evitação? (Crochik, 1996).</p>
+														</div>
+													</div>
+												</div>
+												<!-- Fim do Box de Para Refletir -->
+											</div>
+										</div>
 
-                                                <!-- Box de Para Refletir -->
-                                                <div class="card-box card border-0 shadow my-5">
-                                                    <div class="box-quote">
-                                                        <h5><i class="box-quote__icone bi bi-chat-dots" data-fa-transform="grow-25" aria-hidden="true"></i>Para Refletir</h5>
-                                                        <div class="boxes-content">
+										<!-- Accordion item 2 -->
+										<div id="headingTwo" class="accordion__header">
+											<a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed collapsible-link py-2">Discriminação</a>
+										</div>
+										<div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
+											<div class="card-body p-4">
+												<p class="font-weight-light m-0">Do preconceito muitas vezes decorre a discriminação, definida como atos e atitudes deliberadas, visando restringir o acesso dos alvos do preconceito a bens materiais e simbólicos importantes naquela sociedade.</p>
 
-                                                            <p>Segundo o psicólogo norte americano Gordon Allport (1954) a essência do preconceito reside em supor que é possível conhecer o outro a partir de uma característica, e que todos os portadores daquela característica são iguais. Cabe então indagar sobre a origem do traço que institui a diferença, já que todos somos iguais e diferentes ao mesmo tempo. O que faria um determinado traço produzir a sensação de uma diferença que impede o convívio e o reconhecimento? E por que esta diferença, produzida a partir de critérios mais imaginários que reais, provocaria sentimentos de hostilidade e evitação? (Crochik, 1996).</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Fim do Box de Para Refletir -->
-                                            </div>
-                                        </div>
-            
-                                        <!-- Accordion item 2 -->
-                                        <div id="headingTwo" class="accordion__header">
-                                            <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo"
-                                                class="d-block position-relative collapsed collapsible-link py-2">Discriminação</a>
-                                        </div>
-                                        <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample"
-                                            class="collapse">
-                                            <div class="card-body p-4">
-                                                <p class="font-weight-light m-0">Do preconceito muitas vezes decorre a discriminação, definida como atos e atitudes deliberadas, visando restringir o acesso dos alvos do preconceito a bens materiais e simbólicos importantes naquela sociedade.</p>
+												<p>Para Allport, o preconceito incluiria três dimensões: uma individual, na qual são criados estereótipos para indivíduos e grupos a partir de uma característica; uma cultural, de atribuição de um significado ao estereótipo e uma política no sentido da discriminação do grupo. Essas dimensões se articulam, gerando a hostilidade ou práticas de evitação, em geral justificadas pela depreciação do grupo hostilizado. Os alvos de preconceitos ficam em posição desvantajosa em relação a quem os hostiliza.</p>
+											</div>
+										</div>
 
-                                                <p>Para Allport, o preconceito incluiria três dimensões: uma individual, na qual são criados estereótipos para indivíduos e grupos a partir de uma característica; uma cultural, de atribuição de um significado ao estereótipo e uma política no sentido da discriminação do grupo. Essas dimensões se articulam, gerando a hostilidade ou práticas de evitação, em geral justificadas pela depreciação do grupo hostilizado. Os alvos de preconceitos ficam em posição desvantajosa em relação a quem os hostiliza. </p>
-                                            </div>
-                                        </div>
-            
-                                        <!-- Accordion item 3 -->
-                                        <div id="headingThree" class="accordion__header">
-                                            <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                                aria-controls="collapseThree"
-                                                class="d-block position-relative collapsed collapsible-link py-2">Estigma</a>
-                                        </div>
-                                        <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample"
-                                            class="collapse">
-                                            <div class="card-body p-4">
-                                                <p class="font-weight-light m-0">O <strong>estigma</strong> deriva da atribuição de valores negativos a uma característica individual ou de um grupo. A pessoa aprende ao longo da vida que é portadora de um estigma e sua trajetória é marcada pelas tentativas de lidar com uma desqualificação que lhe é imposta, independente das suas posturas diante do mundo e do outro. </p>
+										<!-- Accordion item 3 -->
+										<div id="headingThree" class="accordion__header">
+											<a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed collapsible-link py-2">Estigma</a>
+										</div>
+										<div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
+											<div class="card-body p-4">
+												<p class="font-weight-light m-0">O <strong>estigma</strong> deriva da atribuição de valores negativos a uma característica individual ou de um grupo. A pessoa aprende ao longo da vida que é portadora de um estigma e sua trajetória é marcada pelas tentativas de lidar com uma desqualificação que lhe é imposta, independente das suas posturas diante do mundo e do outro.</p>
 
-                                                <p>Segundo Goffman, o estigma seria uma espécie de “preconceito discriminativo” (Bandeira e Batista, 2002). Desse modo, o autor busca compreender o processo de atribuição de um valor negativo a uma característica individual ou de um grupo, que daria origem ao preconceito e a transformação deste valor negativo num julgamento moral depreciativo da pessoa, que produz o estigma. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Fim do Accordion -->
+												<p>Segundo Goffman, o estigma seria uma espécie de “preconceito discriminativo” (Bandeira e Batista, 2002). Desse modo, o autor busca compreender o processo de atribuição de um valor negativo a uma característica individual ou de um grupo, que daria origem ao preconceito e a transformação deste valor negativo num julgamento moral depreciativo da pessoa, que produz o estigma.</p>
+											</div>
+										</div>
+									</div>
+									<!-- Fim do Accordion -->
 								</div>
 							</div>
 
@@ -213,11 +200,11 @@
 								<div class="col-12 col-md-10 col-lg-8">
 									<p>Tendo por base a análise de diversas situações envolvendo as interações sociais em que a identificação e diferenciação dos indivíduos e grupos é essencial, Goffman argumenta que nas interações sociais o estigma institui o diferente, o estranho, ao mesmo tempo em que institui a ideia do igual, normal, desejável. O estigma afastaria a pessoa das demais, já que o foco na sua característica depreciada impede a valorização das suas outras características. A reação de esquiva ou inibição da pessoa estigmatizada ou mesmo a incorporação de uma autoimagem negativa e desqualificada, contribuiriam para aumentar o seu isolamento e reforçar o estigma. Em contrapartida, aquele que estigmatiza pode reagir com indiferença ou não reconhecimento do indivíduo estigmatizado, até atuar de maneira mais velada de desqualificação, como a superproteção, infantilização ou a negação do direito à autonomia e privacidade.</p>
 
-                                    <p>A despeito da importância da descrição da dimensão interpessoal do processo de produção e reprodução do estigma, diversos autores (Link e Phelan, 2001) têm chamado a atenção para a necessidade de considerar as dimensões culturais e estruturais do estigma e do preconceito. Tal perspectiva salienta a função social do estigma, argumentando seu papel na produção e reprodução das relações de poder e controle. De acordo com esse ponto de vista, do qual compartilhamos, a definição de uma característica como negativa está relacionada a padrões estéticos, sociais e culturais dominantes num dado contexto e é anterior ao processo de desqualificação.</p>
+									<p>A despeito da importância da descrição da dimensão interpessoal do processo de produção e reprodução do estigma, diversos autores (Link e Phelan, 2001) têm chamado a atenção para a necessidade de considerar as dimensões culturais e estruturais do estigma e do preconceito. Tal perspectiva salienta a função social do estigma, argumentando seu papel na produção e reprodução das relações de poder e controle. De acordo com esse ponto de vista, do qual compartilhamos, a definição de uma característica como negativa está relacionada a padrões estéticos, sociais e culturais dominantes num dado contexto e é anterior ao processo de desqualificação.</p>
 
-                                    <p>Seguindo esse raciocínio, podemos identificar aspectos corporais, expressões de gênero, a cor da pele, o recorte geracional, o nível socioeconômico, a localidade ou aspectos comportamentais, que são tomados como suporte para atribuição do estigma. Igualmente quando os estigmas relacionados a doenças são analisados, é possível perceber que o imaginário construído em torno daqueles indivíduos acometidos por tuberculose, sífilis, hanseníase ou transtornos mentais, inclui formulações imaginárias a respeito das características dos seus portadores. </p>
+									<p>Seguindo esse raciocínio, podemos identificar aspectos corporais, expressões de gênero, a cor da pele, o recorte geracional, o nível socioeconômico, a localidade ou aspectos comportamentais, que são tomados como suporte para atribuição do estigma. Igualmente quando os estigmas relacionados a doenças são analisados, é possível perceber que o imaginário construído em torno daqueles indivíduos acometidos por tuberculose, sífilis, hanseníase ou transtornos mentais, inclui formulações imaginárias a respeito das características dos seus portadores.</p>
 
-                                    <p>Os impactos do estigma nas condições e oportunidades de vida entre os diferentes grupos populacionais que integram as sociedades contemporâneas podem ser ilustrados, por situações diversas, como os alarmantes índices de violência e assassinatos sofridos pela população LGBTQIA+, pelos casos em que a mulher recebe um salário menor do que o homem para exercer a mesma função laboral e em que os jovens negros são muito mais revistados e agredidos por policiais do que jovens brancos. </p>
+									<p>Os impactos do estigma nas condições e oportunidades de vida entre os diferentes grupos populacionais que integram as sociedades contemporâneas podem ser ilustrados, por situações diversas, como os alarmantes índices de violência e assassinatos sofridos pela população LGBTQIA+, pelos casos em que a mulher recebe um salário menor do que o homem para exercer a mesma função laboral e em que os jovens negros são muito mais revistados e agredidos por policiais do que jovens brancos.</p>
 								</div>
 							</div>
 						</div>
@@ -228,7 +215,7 @@
 								<div class="row justify-content-center m-0 py-3">
 									<div class="col-12 col-md-10 col-lg-8">
 										<div class="justify-content-center d-flex flex-column">
-											<p class="h3">A especificidade do estigma repousa na eleição de alguns traços e características que promovem distinções entre os indivíduos e processos de exclusão social, além de atuar no âmbito das relações interpessoais, obscurecendo os processos sociais de produção de desigualdades que lhes são subjacentes. </p>
+											<p class="h3">A especificidade do estigma repousa na eleição de alguns traços e características que promovem distinções entre os indivíduos e processos de exclusão social, além de atuar no âmbito das relações interpessoais, obscurecendo os processos sociais de produção de desigualdades que lhes são subjacentes.</p>
 										</div>
 									</div>
 								</div>
@@ -236,53 +223,53 @@
 						</div>
 						<!-- Fim do Destaque -->
 
-                        <div class="container">
-                            <div class="row justify-content-center mb-5">
+						<div class="container">
+							<div class="row justify-content-center mb-5">
 								<div class="col-12 col-lg-8">
-                                    <p>Nesse sentido, a AIDS se tornou paradigmática na compreensão do estigma como processo social, ao fazer confluir, a um só tempo, práticas sexuais supostamente condenadas moralmente, embora extensamente praticadas (ex. coito anal e multiplicidade de parcerias), o medo da morte, o uso abusivo de substâncias (lícitas ou ilícitas), a relação com o exercício da sexualidade e o maior impacto sobre as pessoas mais vulneráveis, como a população pobre e negra.</p>
+									<p>Nesse sentido, a AIDS se tornou paradigmática na compreensão do estigma como processo social, ao fazer confluir, a um só tempo, práticas sexuais supostamente condenadas moralmente, embora extensamente praticadas (ex. coito anal e multiplicidade de parcerias), o medo da morte, o uso abusivo de substâncias (lícitas ou ilícitas), a relação com o exercício da sexualidade e o maior impacto sobre as pessoas mais vulneráveis, como a população pobre e negra.</p>
 
-                                    <p>Desse modo, para compreender as conexões entre um determinado agravo à saúde, o estigma a ele associado e as demais intervenções sociais produtoras de desigualdades, é necessário levar em conta como as particularidades do agravo em questão se articulam a marcadores sociais como classe social, gênero, cor/raça/etnia, diversidade sexual, entre outros. Portanto, é oportuno considerar as relações entre <strong>estigma, pânico moral e a violência estrutural</strong>.</p>
-                                </div>
-                            </div>
+									<p>Desse modo, para compreender as conexões entre um determinado agravo à saúde, o estigma a ele associado e as demais intervenções sociais produtoras de desigualdades, é necessário levar em conta como as particularidades do agravo em questão se articulam a marcadores sociais como classe social, gênero, cor/raça/etnia, diversidade sexual, entre outros. Portanto, é oportuno considerar as relações entre <strong>estigma, pânico moral e a violência estrutural</strong>.</p>
+								</div>
+							</div>
 
-                            <div class="row justify-content-center mb-5">
-                                <div class="col-12 col-md-10 col-lg-8">
-                                    <!--Comparação-->
-                                    <div class="row justify-content-center h-100">
-                                        <div class="col-12 col-md-5 mb-5 mb-md-0">
-                                            <div class="card-comparacao h-100">
-                                                <div class="card shadow border-0 item item1 h-100">
-                                                    <h5 class="mt-0 text-center"><strong>Pânico moral</strong></h5>
-                                                    <p>O pânico moral é definido como um processo no qual um grupo social em situação de poder começa a difundir a ideia de que atitudes ou comportamentos de outros grupos - em geral minoritários ou em situação de desigualdade - pode representar uma ameaça para a sociedade. Esse processo provoca uma reação de repulsa e evitação destes grupos (Cohen 1972).</p>
-                                                    <!-- Fim de Lista Simples -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-2 align-self-center">
-                                            <!-- <p class="text-center display-4"><i class="bi bi-x-lg"></i></p> -->
-                                            <!-- As linhas comentadas abaixo é caso queira usar algum dos outros tipos de comparação -->
-                                            <!-- <p class="text-center" style="font-size:2.5rem; font-weight: 700;">OU</p> -->
-                                            <p class="text-center" style="font-size:2.5rem; font-weight: 700;">&</p>
-                                        </div>
-                                        <div class="col-12 col-md-5 mb-5 mb-md-0">
-                                            <div class="card-comparacao h-100">
-                                                <div class="card shadow border-0 item item2 h-100">
-                                                    <h5 class="mt-0 text-center verde"><strong>Violência estrutural</strong></h5>
-                                                    <p>Enquanto mecanismo que fomenta a desigualdade, o pânico moral opera como instrumento de produção e reprodução da violência estrutural. Trata-se de um tipo de violência que não é exercida por um sujeito sobre outro e sim que atua, por meio de estruturas políticas, sociais e econômicas, no sentido de gerar e manter desigualdades sociais (Parker, 2013). </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--Fim de comparação-->
-                                </div>
-                            </div>
+							<div class="row justify-content-center mb-5">
+								<div class="col-12 col-md-10 col-lg-8">
+									<!--Comparação-->
+									<div class="row justify-content-center h-100">
+										<div class="col-12 col-md-5 mb-5 mb-md-0">
+											<div class="card-comparacao h-100">
+												<div class="card shadow border-0 item item1 h-100">
+													<h5 class="mt-0 text-center"><strong>Pânico moral</strong></h5>
+													<p>O pânico moral é definido como um processo no qual um grupo social em situação de poder começa a difundir a ideia de que atitudes ou comportamentos de outros grupos - em geral minoritários ou em situação de desigualdade - pode representar uma ameaça para a sociedade. Esse processo provoca uma reação de repulsa e evitação destes grupos (Cohen 1972).</p>
+													<!-- Fim de Lista Simples -->
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-md-2 align-self-center">
+											<!-- <p class="text-center display-4"><i class="bi bi-x-lg"></i></p> -->
+											<!-- As linhas comentadas abaixo é caso queira usar algum dos outros tipos de comparação -->
+											<!-- <p class="text-center" style="font-size:2.5rem; font-weight: 700;">OU</p> -->
+											<p class="text-center" style="font-size: 2.5rem; font-weight: 700">&</p>
+										</div>
+										<div class="col-12 col-md-5 mb-5 mb-md-0">
+											<div class="card-comparacao h-100">
+												<div class="card shadow border-0 item item2 h-100">
+													<h5 class="mt-0 text-center verde"><strong>Violência estrutural</strong></h5>
+													<p>Enquanto mecanismo que fomenta a desigualdade, o pânico moral opera como instrumento de produção e reprodução da violência estrutural. Trata-se de um tipo de violência que não é exercida por um sujeito sobre outro e sim que atua, por meio de estruturas políticas, sociais e econômicas, no sentido de gerar e manter desigualdades sociais (Parker, 2013).</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--Fim de comparação-->
+								</div>
+							</div>
 
-                            <div class="row justify-content-center">
-                                <div class="col-12 col-md-10 col-lg-8">
-                                    <p>Os processos de pânico moral e a violência estrutural contribuem para distanciar pessoas e grupos do acesso a bens materiais e simbólicos da sociedade. Ao contrário do estigma, não operam no âmbito das relações interpessoais, mas permeiam a vida cotidiana e colaboram para formar percepções, julgamentos e valores que orientam comportamentos e atitudes dos sujeitos nas suas interações. Ou seja, a dinâmica da violência estrutural se utiliza do pânico moral, que, muitas vezes, se apoia em processos de produção de estigma.</p>
-                                </div>
-                            </div>
-                        </div>
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8">
+									<p>Os processos de pânico moral e a violência estrutural contribuem para distanciar pessoas e grupos do acesso a bens materiais e simbólicos da sociedade. Ao contrário do estigma, não operam no âmbito das relações interpessoais, mas permeiam a vida cotidiana e colaboram para formar percepções, julgamentos e valores que orientam comportamentos e atitudes dos sujeitos nas suas interações. Ou seja, a dinâmica da violência estrutural se utiliza do pânico moral, que, muitas vezes, se apoia em processos de produção de estigma.</p>
+								</div>
+							</div>
+						</div>
 					</section>
 
 					<!-- Navegação da aula -->
@@ -307,7 +294,7 @@
 								<p class="text-center"><small>Realização:</small></p>
 								<ul class="logos pt-0">
 									<li><img src="../../images/logo-cv-dark.svg" alt="Logo da Campus Virtual Fiocruz" height="50px" /></li>
-									<li><img src="../../images/OHS-logo-dark.png" alt="Logo Observatório História e Saúde" height="55px" /></li>
+									<!-- <li><img src="../../images/OHS-logo-dark.png" alt="Logo Observatório História e Saúde" height="55px" /></li> -->
 								</ul>
 							</div>
 						</div>
@@ -316,7 +303,7 @@
 							<div class="col-12 col-md-10 col-lg-8">
 								<p class="text-center mb-0"><small>Apoio:</small></p>
 								<ul class="logos pt-0">
-									<li><img src="../../images/COC.svg" alt="Logo da Casa Oswaldo Cruz" height="80px" /></li>
+									<!-- <li><img src="../../images/COC.svg" alt="Logo da Casa Oswaldo Cruz" height="80px" /></li> -->
 									<li><img src="../../images/fiocruz.svg" alt="Logo da Fiocruz" height="80px" /></li>
 									<li><img src="../../images/sus.svg" alt="Logo do Sistema Único de Saúde" height="60px" /></li>
 									<li><img src="../../images/ministerio-da-saude-e-governo-federal.svg" alt="Logo do Ministério da Saúde e Governo Federal" height="50px" /></li>
