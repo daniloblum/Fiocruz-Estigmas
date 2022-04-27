@@ -12,10 +12,38 @@
   src: url(../fonts/bootstrap-icons.woff);
 }
 
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/NotoSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/fonts/NotoSans-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/NotoSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans SemiBold';
+  font-style: italic;
+  font-weight: 600;
+  src: url('/fonts/NotoSans-SemiBoldItalic.ttf');
+}
+
 /*
     font-family: 'Roboto', sans-serif;
     font-family: 'Aleo', serif;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-family: 'bootstrapIcon';
 */
 
@@ -32,14 +60,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Aleo', serif;
+  font-family: 'Noto Sans', serif;
   font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 2rem;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 300;
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -58,6 +86,11 @@ a:focus {
   font-weight: 500;
   text-decoration: underline;
 }
+
+/* em {
+  font-family: 'Noto Sans', sans-serif;
+  font-style: italic;
+} */
 
 .primary-color {
   color: var(--primary-color);

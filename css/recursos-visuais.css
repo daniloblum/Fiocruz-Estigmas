@@ -67,6 +67,10 @@ section {
   color: var(--secondary-color-extra-light) !important;
 }
 
+.text-color-light {
+  color: var(--color-light) !important;
+}
+
 .bg-secondary {
   background-color: var(--secondary-color) !important;
 }
@@ -99,13 +103,13 @@ pre {
   display: block;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
-  color: var(--primary-color-light);
+  color: var(--secondary-color);
   margin-bottom: 0.5rem;
 }
 .heading__block h2,
 .heading__block h3,
 .heading__title {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .heading__block p,
 .heading__lead {
@@ -115,7 +119,7 @@ pre {
   content: '';
   display: block;
   width: 40px;
-  border-top: 2px solid var(--primary-color);
+  border-top: 2px solid var(--secondary-color);
   margin: 20px 0;
 }
 
@@ -494,7 +498,7 @@ Destaques
 /*Olho de texto*/
 
 .olho-de-texto p {
-	color:var(--secondary-color-dark);
+	color:var(--secondary-color-light);
 	font-size:1.25rem;
 	font-weight: 600;
 	/* padding:30px; */

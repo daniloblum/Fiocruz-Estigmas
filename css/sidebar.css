@@ -16,7 +16,7 @@
   color: var(--secondary-color-extra-light);
 }
 .sidebar__section--contrast {
-  background-color: #111;
+  background-color: var(--secondary-color-dark);
 }
 .sidebar__inner {
   padding: 0;
@@ -24,19 +24,23 @@
   transform: translate(0, 0);
   transform: translate3d(0, 0, 0);
   will-change: position, transform;
-  background-color: var(--color-dark);
+  background-color: var(--secondary-color);
   min-height: 100vh;
 }
 .sidebar__inner hr {
-  background: var(--color-light-hover);
+  background: var(--secondary-color-light);
   margin: 0px 20px;
 }
 .sidebar__header {
   padding: 20px;
 }
-.sidebar__header h3 {
+.sidebar__header .h3 {
   color: var(--secondary-color-extra-light);
-  font-family: 'Archivo Black', sans-serif !important;
+  font-family: 'Noto Sans', sans-serif !important;
+}
+.sidebar__header .h6 {
+  color: var(--secondary-color-extra-light);
+  font-family: 'Noto Sans', sans-serif !important;
 }
 .sidebar__section {
   padding: 20px 0;
@@ -51,14 +55,14 @@
   display: block;
   align-items: center;
   padding: 10px 20px;
-  color: var(--secondary-color-light);
+  color: #fff;
   font-weight: 300;
   text-decoration: none;
 }
 .sidebar__btn:hover,
 .sidebar__btn:focus {
   background-color: var(--color-light-hover);
-  color: var(--secondary-color-light);
+  color: #fff;
   text-decoration: none;
   font-weight: 300;
 }
@@ -70,16 +74,16 @@
   position: relative;
   display: flex;
   align-items: flex-start;
-  color: var(--secondary-color-light);
+  color: #ffffff;
   font-size: 0.875rem;
 }
 .sidebar__topic-list .sidebar__list-item.sidebar__list-item--selected {
-  color: var(--primary-color-light);
+  color: #ffffff;
 }
 .sidebar__list-item i {
   font-size: 16px;
   margin-right: 20px;
-  color: var(--secondary-color-dark);
+  color: var(--secondary-color-light);
   opacity: 0.3;
 }
 .sidebar__list-item.sidebar__list-item--selected i {
@@ -96,7 +100,7 @@
   left: 26px;
   width: 4px;
   height: calc(100% - 20px);
-  background-color: var(--secondary-color-dark);
+  background-color: var(--secondary-color-light);
   z-index: 0;
   opacity: 0.3;
 }

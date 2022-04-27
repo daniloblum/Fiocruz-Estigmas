@@ -1,9 +1,16 @@
 .header {
-	height: 350px;
+	/* height: 350px;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 	/* background-size: auto 400px; */
-	background-position: top center;
+	/* background-position: top center;
+	position: relative;
+	margin-bottom: 50px; */
+
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 	position: relative;
 	margin-bottom: 50px;
 }
