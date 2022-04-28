@@ -1,5 +1,9 @@
 /* s */
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: #ffffff;
 }
@@ -7,13 +11,13 @@ body {
 
 header {
     position: relative;
-    background-image: url(../images/home/tarja_capa.png);
+    background-image: url(../images/home/tarja-capa.jpg);
     background-size: cover;
     background-position:top center;
     height: 140vw;
 }
 .main {
-    background: url(../images/home/section-bg.png);
+    background: #F8FAFC url(../images/home/section-bg.png);
     background-repeat: no-repeat;
     background-position-y: 20%;
     background-position-x: center;
@@ -70,7 +74,7 @@ header {
 
 @media (min-width:992px) {
     header {
-        height: 36vw;
+        height: 30vw;
     }
     .header__title .logo {
         margin: 0 auto 2vw;
@@ -128,16 +132,30 @@ header {
     margin: 0 0 1.25rem;
 }
 
+.card-destaque {border:1px solid var(--secondary-color);}
+.card-destaque p {font-size:inherit;}
+
+.presentation .bg-secondary-light {background-color: rgb(227, 211, 211,0.3) !important;}
+
+.presentation .table-responsive th {
+    vertical-align: middle;
+    border-bottom: 1px solid #d2a6a6;
+}
+
+.presentation.bg-section {background: #F8FAFC url(../images/home/section-bg.png);}
+
+
+
 @media (min-width:768px) {
     .main {
-        background-position-y: 25%;
+        background-position-y: 0;
         background-size: 200%;
         transform: none;
     }
 }
 @media (min-width:992px) {
     .main {
-        background-position-y: 50%;
+        background-position-y: 0;
         background-size: 100%;
     }
 }
