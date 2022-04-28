@@ -35,12 +35,12 @@
 	padding: 20px;
 }
 .sidebar__header .h3 {
-	color: var(--secondary-color-extra-light);
+	color: var(--secondary-color-extra-light) !important;
 	font-family: 'Noto Sans', sans-serif !important;
 	margin-bottom: 0;
 }
 .sidebar__header .h6 {
-	color: var(--secondary-color-extra-light);
+	color: var(--secondary-color-extra-light) !important;
 	font-family: 'Noto Sans', sans-serif !important;
 	margin-bottom: 0;
 	line-height: normal;
