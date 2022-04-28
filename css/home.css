@@ -1,5 +1,9 @@
 /* s */
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: #ffffff;
 }
@@ -13,7 +17,7 @@ header {
     height: 140vw;
 }
 .main {
-    background: url(../images/home/section-bg.png);
+    background: #F8FAFC url(../images/home/section-bg.png);
     background-repeat: no-repeat;
     background-position-y: 20%;
     background-position-x: center;
@@ -127,6 +131,20 @@ header {
     border-top: 1px solid var(--secondary-color);
     margin: 0 0 1.25rem;
 }
+
+.card-destaque {border:1px solid var(--secondary-color);}
+.card-destaque p {font-size:inherit;}
+
+.presentation .bg-secondary-light {background-color: rgb(227, 211, 211,0.3) !important;}
+
+.presentation .table-responsive th {
+    vertical-align: middle;
+    border-bottom: 1px solid #d2a6a6;
+}
+
+.presentation.bg-section {background: #F8FAFC url(../images/home/section-bg.png);}
+
+
 
 @media (min-width:768px) {
     .main {

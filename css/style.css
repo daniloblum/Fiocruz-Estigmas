@@ -62,7 +62,7 @@ h5,
 h6 {
 	font-family: 'Noto Sans', serif;
 	font-weight: 700;
-	color: var(--primary-color);
+	color: var(--secondary-color);
 	margin-bottom: 2rem;
 }
 
@@ -72,10 +72,10 @@ h6 {
 .h4,
 .h5,
 .h6 {
-	font-family: 'Noto Sans', serif;
-	font-weight: 700;
-	color: var(--primary-color);
-	margin-bottom: 2rem;
+	font-family: 'Noto Sans', serif !important;
+	font-weight: 700 !important;
+	color: var(--secondary-color) !important;
+	/* margin-bottom: 2rem !important; */
 }
 
 p {
@@ -103,6 +103,8 @@ a:focus {
   font-family: 'Noto Sans', sans-serif;
   font-style: italic;
 } */
+
+.caption-top {caption-side: top;}
 
 .primary-color {
 	color: var(--primary-color);
