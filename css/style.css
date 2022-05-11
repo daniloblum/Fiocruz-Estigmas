@@ -16,28 +16,28 @@
 	font-family: 'Noto Sans';
 	font-style: normal;
 	font-weight: 400;
-	src: url('/fonts/NotoSans-Regular.ttf');
+	src: url('../fonts/NotoSans-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Noto Sans';
 	font-style: italic;
 	font-weight: 400;
-	src: url('/fonts/NotoSans-Italic.ttf');
+	src: url('../fonts/NotoSans-Italic.ttf');
 }
 
 @font-face {
 	font-family: 'Noto Sans SemiBold';
 	font-style: normal;
 	font-weight: 600;
-	src: url('/fonts/NotoSans-SemiBold.ttf');
+	src: url('../fonts/NotoSans-SemiBold.ttf');
 }
 
 @font-face {
 	font-family: 'Noto Sans SemiBold';
 	font-style: italic;
 	font-weight: 600;
-	src: url('/fonts/NotoSans-SemiBoldItalic.ttf');
+	src: url('../fonts/NotoSans-SemiBoldItalic.ttf');
 }
 
 /*
