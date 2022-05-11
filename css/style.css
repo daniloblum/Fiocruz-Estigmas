@@ -73,8 +73,8 @@ h6 {
 .h5,
 .h6 {
 	font-family: 'Noto Sans', serif !important;
-	font-weight: 700 !important;
-	color: var(--secondary-color) !important;
+	font-weight: 700;
+	color: var(--secondary-color);
 	/* margin-bottom: 2rem !important; */
 }
 
@@ -104,7 +104,9 @@ a:focus {
   font-style: italic;
 } */
 
-.caption-top {caption-side: top;}
+.caption-top {
+	caption-side: top;
+}
 
 .primary-color {
 	color: var(--primary-color);
