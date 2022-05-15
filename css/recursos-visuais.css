@@ -544,9 +544,11 @@ Destaques
 	border-radius: 0.75rem;
 	padding: 30px;
 }
-.box-quote h5 {
+.box-quote .h5 {
 	padding-bottom: 10px;
 	border-bottom: 1px solid var(--primary-color);
+	margin-bottom: 20px;
+	display: block;
 }
 .box-quote .boxes-content p {
 	font-size: 1.25rem;
@@ -593,7 +595,7 @@ Destaques
 	.box-quote {
 		padding: 15px;
 	}
-	.box-quote h5 {
+	.box-quote .h5 {
 		padding-left: 35px;
 	}
 	.card-box .box-quote__icone {

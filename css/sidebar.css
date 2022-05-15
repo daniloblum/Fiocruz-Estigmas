@@ -66,7 +66,7 @@
 	margin-bottom: 10px;
 	font-weight: 500;
 }
-.sidebar__section h6 {
+.sidebar__section.classes .h6 {
 	display: block;
 	color: var(--secondary-color-extra-light) !important;
 	margin-bottom: 10px;

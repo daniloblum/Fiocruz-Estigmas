@@ -1,12 +1,5 @@
 .header {
-	/* height: 350px;
-	background-attachment: fixed;
-	background-repeat: no-repeat; */
-	/* background-size: auto 400px; */
-	/* background-position: top center;
-	position: relative;
-	margin-bottom: 50px; */
-
+	background-image: url(../../images/modulo1/header-tarja.jpg);
 	height: 350px;
 	background-repeat: no-repeat;
 	background-size: cover;
