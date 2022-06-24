@@ -333,36 +333,34 @@ Accordion Image
 .accordion-foto a:visited {
 	text-decoration: none;
 }
-.accordion-foto a h5 {
+.accordion-foto a span.h5 {
+	display: block;
 	margin-top: 1.5rem;
 }
-.accordion-foto a:hover h5 {
+.accordion-foto a:hover span.h5 {
 	color: var(--primary-color-light);
 }
 
 /*Configuro a seta para baixo (fa-chevron-down)*/
-.accordion-foto.accordion i,
-.accordion-foto.accordion .svg-inline--fa {
+.accordion-foto.accordion span span {
 	position: relative;
-	top: 0;
-	left: 10px;
-	font-size: 1rem;
-	animation: pulse2 1.5s infinite;
+	top: 10px;
+	left: 0px;
+	font-size: 2rem;
+	font-weight: 600;
+	animation: pulse2 1.5s ease-in-out infinite;
 	transition: 0.25s;
 }
 
-.accordion-foto.accordion .fa-chevron-down::before {
-	content: '\f078' !important;
-}
 @keyframes pulse2 {
 	0% {
-		transform: translateY(0);
+		transform: translateY(0.25rem);
 	}
 	50% {
-		transform: translateY(-0.5rem);
+		transform: translateY(-0.25rem);
 	}
 	100% {
-		transform: translateY(0);
+		transform: translateY(0.25rem);
 	}
 }
 
@@ -389,11 +387,6 @@ Cards de Comparação e Diferenciação
 	padding: 30px 30px 20px;
 	background: #fff;
 	font-size: 1rem;
-}
-
-.card-comparacao .fa-times,
-.card-diferenciacao .fa-times {
-	font-size: 6rem;
 }
 
 /* -------------------------------- 
@@ -441,13 +434,14 @@ blockquote {
 	line-height: 1.5;
 	font-weight: 300;
 }
-blockquote i {
+blockquote span.material-symbols-rounded {
+	font-variation-settings: 'FILL' 1;
 	color: var(--primary-color);
 	font-size: 3rem;
 	padding: 0 30px 0 0;
 }
 blockquote > div {
-	border-left: 2px solid olivedrab;
+	border-left: 2px solid var(--primary-color);
 	padding-left: 30px;
 }
 blockquote .quote-autor {
@@ -1107,6 +1101,10 @@ Listas
 }
 .obj-lista .list-group ul {
 	list-style: none;
+}
+.obj-lista .list-group-item span.material-symbols-rounded {
+	vertical-align: bottom;
+	line-height: 1.1;
 }
 /*Quando há lista dentro de lista:*/
 .list-group-item ul li {
