@@ -2,50 +2,9 @@
 @import 'header.css';
 @import 'footer.css';
 @import 'colors.css';
+@import 'fonts.css';
 @import 'buttons.css';
 @import 'recursos-visuais.css';
-
-@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css');
-
-@font-face {
-	font-family: bootstrapIcon;
-	src: url(../fonts/bootstrap-icons.woff);
-}
-
-@font-face {
-	font-family: 'Noto Sans';
-	font-style: normal;
-	font-weight: 400;
-	src: url('../fonts/NotoSans-Regular.ttf');
-}
-
-@font-face {
-	font-family: 'Noto Sans';
-	font-style: italic;
-	font-weight: 400;
-	src: url('../fonts/NotoSans-Italic.ttf');
-}
-
-@font-face {
-	font-family: 'Noto Sans SemiBold';
-	font-style: normal;
-	font-weight: 600;
-	src: url('../fonts/NotoSans-SemiBold.ttf');
-}
-
-@font-face {
-	font-family: 'Noto Sans SemiBold';
-	font-style: italic;
-	font-weight: 600;
-	src: url('../fonts/NotoSans-SemiBoldItalic.ttf');
-}
-
-/*
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Aleo', serif;
-    font-family: 'Noto Sans', sans-serif;
-    font-family: 'bootstrapIcon';
-*/
 
 * {
 	margin: 0;
@@ -60,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Noto Sans', serif;
+	font-family: 'Noto Sans', sans-serif !important;
 	font-weight: 700;
 	color: var(--secondary-color);
 	margin-bottom: 2rem;
@@ -73,14 +32,14 @@ h6 {
 .h5,
 .h6 {
 	display: block;
-	font-family: 'Noto Sans', serif !important;
+	font-family: 'Noto Sans', sans-serif !important;
 	font-weight: 700;
 	color: var(--secondary-color);
 	/* margin-bottom: 2rem !important; */
 }
 
 p {
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	margin-bottom: 1rem;
 	line-height: 1.5;
