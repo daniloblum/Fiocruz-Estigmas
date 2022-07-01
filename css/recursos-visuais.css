@@ -19,6 +19,10 @@ section {
 .card {
 	border-radius: 0.75rem;
 }
+
+.card-body {
+	padding: 1.5rem;
+}
 .card.shadow {
 	transition: ease-out;
 	transition-duration: 0.5s;
@@ -101,8 +105,8 @@ pre {
 .heading__block span,
 .heading__before {
 	display: block;
-	font-size: 1rem;
-	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+	font-family: 'Patrick Hands', 'Roboto', sans-serif;
 	color: var(--secondary-color);
 	margin-bottom: 0.5rem;
 }
@@ -110,6 +114,7 @@ pre {
 .heading__block h3,
 .heading__title {
 	color: var(--secondary-color);
+	font-weight: 700;
 }
 .heading__block p,
 .heading__lead {
@@ -119,7 +124,7 @@ pre {
 	content: '';
 	display: block;
 	width: 40px;
-	border-top: 2px solid var(--secondary-color);
+	border-top: 2px solid var(--primary-color);
 	margin: 20px 0;
 }
 
@@ -302,8 +307,8 @@ Accordion Image
 }
 .accordion-foto .pic:nth-child(3) {
 	z-index: -1;
-	background-color: var(--primary-color-light);
-	opacity: 0.8;
+	background-color: var(--primary-color);
+	opacity: 0.6;
 }
 
 /*Faço a rotação das imagens no hover*/
@@ -324,21 +329,22 @@ Accordion Image
 	-webkit-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
 }
-.accordion-foto a {
-	padding: 0;
+.accordion-foto a:not(.accordion-foto-conteudo a) {
+	padding: 50px;
 	text-decoration: none !important;
 }
-.accordion-foto a:hover,
-.accordion-foto a:focus,
-.accordion-foto a:visited {
+.accordion-foto a:hover:not(.accordion-foto-conteudo a),
+.accordion-foto a:focus:not(.accordion-foto-conteudo a),
+.accordion-foto a:visited:not(.accordion-foto-conteudo a) {
 	text-decoration: none;
 }
 .accordion-foto a span.h5 {
 	display: block;
 	margin-top: 1.5rem;
+	color: var(--primary-color);
 }
 .accordion-foto a:hover span.h5 {
-	color: var(--primary-color-light);
+	opacity: 0.8;
 }
 
 /*Configuro a seta para baixo (fa-chevron-down)*/
@@ -383,7 +389,6 @@ Cards de Comparação e Diferenciação
 .card-diferenciacao .item {
 	padding: 30px;
 	background: #fff;
-	font-size: 1rem;
 }
 
 .compare-symbol span.material-symbols-rounded {
@@ -499,7 +504,6 @@ Destaques
 /*Cards de texto (com título, sem título e lado a lado)*/
 
 .card-destaque p {
-	font-weight: 400;
 	font-size: 1.2rem;
 	line-height: 1.5;
 }
@@ -510,7 +514,7 @@ Destaques
 /*Olho de texto*/
 
 .olho-de-texto p {
-	color: var(--secondary-color-light);
+	color: var(--primary-color-dark);
 	font-size: 1.25rem;
 	font-weight: 600;
 	/* padding:30px; */
@@ -533,25 +537,25 @@ Destaques
 .card-box {
 	padding: 15px;
 }
-.box-quote {
+.box-title {
 	position: relative;
-	border: 4px dotted var(--secondary-color);
+	border: 4px dotted var(--secondary-color-light);
 	border-radius: 0.75rem;
 	padding: 30px;
 }
-.box-quote .h5 {
+.box-title .h4 {
 	padding-bottom: 10px;
-	border-bottom: 1px solid var(--primary-color);
+	border-bottom: 1px solid var(--secondary-color-light);
 	margin-bottom: 20px;
 	display: block;
-}
-.box-quote .boxes-content p {
-	font-size: 1.25rem;
-	line-height: 1.3;
 	font-weight: 500;
 }
+.box-title .boxes-content p {
+	font-size: 1.25rem;
+	line-height: 1.3;
+}
 
-.box-quote .boxes-content p:last-child {
+.box-title .boxes-content p:last-child {
 	margin-bottom: 0;
 }
 
@@ -568,7 +572,7 @@ Destaques
 	box-shadow: 0px 4px 8px rgb(0 0 0 / 20%);
 	color: var(--secondary-color);
 }
-.card-box .box-quote__icone {
+.card-box .box-title__icone {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -581,19 +585,19 @@ Destaques
 	font-size: 40px;
 	z-index: 1;
 	border-radius: 50%;
-	background: var(--secondary-color);
+	background: var(--primary-color);
 	box-shadow: 0px 4px 8px rgb(0 0 0 / 20%);
 	color: #ffffff;
 	border: 4px solid #ffffff;
 }
 @media (max-width: 767.9px) {
-	.box-quote {
+	.box-title {
 		padding: 15px;
 	}
-	.box-quote .h5 {
+	.box-title .h5 {
 		padding-left: 35px;
 	}
-	.card-box .box-quote__icone {
+	.card-box .box-title__icone {
 		left: -30px;
 	}
 }
@@ -830,7 +834,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
 
 /* Legenda de Vídeo */
 
-.box-quote .boxes-content .video-subtitle p {
+.box-title .boxes-content .video-subtitle p {
 	font-size: 0.75rem;
 	margin: 20px auto;
 }
@@ -853,7 +857,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
 /*Destaque Parallax*/
 
 .page-title-parallax {
-	padding: 20px 0;
+	padding: 50px 0;
 }
 
 .page-title-parallax a {
@@ -871,7 +875,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
 /*Fundos de destaques*/
 
 .destaque-full {
-	padding: 20px 0;
+	padding: 50px 0;
 }
 
 .destaque-full p:last-child {
@@ -1119,9 +1123,60 @@ Listas
 	border-radius: 6px;
 	margin-bottom: 0.5rem;
 	padding: 0.4rem 0;
+	font-weight: 300;
 }
-.obj-lista .list-group ul {
+.obj-lista ul.list-group {
 	list-style: none;
+}
+
+.obj-lista ul.list-group .list-group-item:before {
+	font-family: 'Material Symbols Rounded';
+	content: 'label_important';
+	color: var(--primary-color);
+	vertical-align: middle;
+	margin-right: 10px;
+	font-size: 120%;
+	font-weight: 300;
+}
+
+.obj-lista ul.list-group .list-group-item.text-white:before {
+	font-family: 'Material Symbols Rounded';
+	content: 'label_important';
+	color: inherit;
+	vertical-align: middle;
+	margin-right: 10px;
+	font-size: 120%;
+	font-weight: 300;
+}
+
+.obj-lista ul.list-group .list-group-item[list-style='video']:before {
+	font-family: 'Material Symbols Rounded';
+	content: 'movie';
+	vertical-align: middle;
+	color: var(--secondary-color);
+}
+.obj-lista ul.list-group .list-group-item[list-style='audio']:before {
+	font-family: 'Material Symbols Rounded';
+	content: 'headphones';
+	vertical-align: middle;
+	color: var(--secondary-color);
+}
+.obj-lista ul.list-group .list-group-item[list-style='file']:before {
+	font-family: 'Material Symbols Rounded';
+	content: 'article';
+	vertical-align: middle;
+	color: var(--secondary-color);
+}
+.obj-lista ul.list-group .list-group-item[list-style='pages']:before {
+	font-family: 'Material Symbols Rounded';
+	content: 'tab';
+	vertical-align: middle;
+	color: var(--secondary-color);
+}
+.obj-lista ul.list-group .list-group-item[list-style='none']:before {
+	font-family: 'Material Symbols Rounded';
+	content: '';
+	/* list-style: none; */
 }
 
 /*Quando há lista dentro de lista:*/
@@ -1146,7 +1201,7 @@ Listas
 }
 
 .obj-lista ol.list-group .list-group-item:before {
-	background-color: var(--secondary-color);
+	background-color: var(--primary-color);
 	content: counter(contador-ul);
 	margin-right: 0.8rem;
 	border-radius: 50%;
@@ -1167,7 +1222,7 @@ Modal
 
 -----------------------------------------------------------------*/
 
-.modal .h4 {
+.modal .modal-title {
 	margin-top: 0;
 }
 
@@ -1273,7 +1328,7 @@ Slider
 /*Carrossel imagem vertical e texto (ajustes na margem do texto no desktop*/
 
 @media (min-width: 768px) {
-	.slider-imagem-vertical .box-quote {
+	.slider-imagem-vertical .box-title {
 		height: 495px;
 	}
 
@@ -1424,9 +1479,9 @@ Tabela
 }
 
 .table-responsive th {
-	background-color: var(--primary-color);
+	background-color: var(--secondary-color);
 	color: #fff;
-	border: 1px solid var(--primary-color);
+	border: 1px solid var(--secondary-color-light);
 }
 
 .table-responsive th a {
@@ -1435,7 +1490,7 @@ Tabela
 
 .table-responsive td,
 .table-responsive tr {
-	border: 1px solid var(--primary-color);
+	border: 1px solid var(--secondary-color-light);
 	vertical-align: middle;
 }
 
@@ -1741,7 +1796,7 @@ Timeline
 
 /*Série 3*/
 .serie3 .cd-timeline__img.cd-timeline__option1 {
-	background: var(--secondary-color);
+	background: var(--primary-color);
 }
 
 .cd-timeline__img.cd-timeline__option2 {
@@ -2039,7 +2094,7 @@ TIMELINE ZIGZAG
 	font-weight: bold;
 	padding: 15px 20px;
 	border-radius: 50%;
-	background-color: var(--secondary-color);
+	background-color: var(--primary-color);
 	color: #fff;
 	/* max-height: 50px; */
 	z-index: 2;
@@ -2059,7 +2114,7 @@ TIMELINE ZIGZAG
 .timeline-z-estrutura.row .col-2::after {
 	content: '';
 	position: absolute;
-	border-left: 3px solid var(--secondary-color);
+	border-left: 3px solid var(--primary-color);
 	z-index: 1;
 }
 
@@ -2086,7 +2141,7 @@ TIMELINE ZIGZAG
 }
 
 .timeline-z hr {
-	border-top: 3px solid var(--secondary-color);
+	border-top: 3px solid var(--primary-color);
 	margin: 0;
 	top: 17px;
 	position: relative;
@@ -2098,7 +2153,7 @@ TIMELINE ZIGZAG
 }
 
 .timeline-z .corner {
-	border: 3px solid var(--secondary-color);
+	border: 3px solid var(--primary-color);
 	width: 100%;
 	position: relative;
 	border-radius: 15px;
@@ -2681,28 +2736,28 @@ TIMELINE HORIZONTAL 2
 	overflow: hidden;
 }
 
-.timeline-horizontal2 .box-quote {
+.timeline-horizontal2 .box-title {
 	height: 160px;
 	overflow-y: auto;
 	scrollbar-width: thin;
 	margin-bottom: 0;
 }
 
-.timeline-horizontal2 .box-quote p {
+.timeline-horizontal2 .box-title p {
 	font-style: normal;
 	font-size: 0.85rem;
 	margin-bottom: 1rem;
 }
 
-.timeline-horizontal2 .box-quote i {
+.timeline-horizontal2 .box-title i {
 	font-size: 0.85rem;
 }
 
-.timeline-horizontal2 .box-quote h4 {
+.timeline-horizontal2 .box-title h4 {
 	color: var(--primary-color);
 }
 
-.timeline-horizontal2 .box-quote h4 i {
+.timeline-horizontal2 .box-title h4 i {
 	font-style: normal;
 	font-size: 1.25rem;
 	margin-right: 0.5rem;
@@ -2722,7 +2777,7 @@ TIMELINE HORIZONTAL 2
 /*A pseudoclasse ::-webkit é para customizar a scrollbar nos navegadores:
 Chrome, Safari, Opera, Edge */
 
-.timeline-horizontal2 .box-quote::-webkit-scrollbar {
+.timeline-horizontal2 .box-title::-webkit-scrollbar {
 	width: 8px;
 	background-color: var(--color-light);
 }
@@ -2732,7 +2787,7 @@ Chrome, Safari, Opera, Edge */
 	background-color: #f1f1f1;
 }
 
-.timeline-horizontal2 .box-quote::-webkit-scrollbar-thumb,
+.timeline-horizontal2 .box-title::-webkit-scrollbar-thumb,
 .timeline-horizontal2 ol::-webkit-scrollbar-thumb {
 	background-color: var(--secondary-color);
 }
@@ -2871,7 +2926,7 @@ Chrome, Safari, Opera, Edge */
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 991px) {
-	.timeline-horizontal2 .box-quote {
+	.timeline-horizontal2 .box-title {
 		margin-bottom: 25px;
 	}
 

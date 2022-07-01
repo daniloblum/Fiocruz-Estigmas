@@ -19,8 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Noto Sans', sans-serif !important;
-	font-weight: 700;
+	font-family: 'Roboto Condensed', sans-serif !important;
 	color: var(--secondary-color);
 	margin-bottom: 2rem;
 }
@@ -32,14 +31,13 @@ h6 {
 .h5,
 .h6 {
 	display: block;
-	font-family: 'Noto Sans', sans-serif !important;
-	font-weight: 700;
+	font-family: 'Roboto Condensed', sans-serif;
 	color: var(--secondary-color);
 	/* margin-bottom: 2rem !important; */
 }
 
 p {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Light', sans-serif;
 	font-weight: 300;
 	margin-bottom: 1rem;
 	line-height: 1.5;
@@ -49,7 +47,7 @@ a,
 a:visited {
 	color: var(--primary-color);
 	font-weight: 500;
-	text-decoration: underline;
+	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
 }
 a:hover,
@@ -57,6 +55,19 @@ a:focus {
 	color: var(--primary-color-light);
 	font-weight: 500;
 	text-decoration: underline;
+}
+
+a[target='_blank']:after {
+	font-family: 'Material Symbols Rounded';
+	content: 'open_in_new';
+	vertical-align: text-bottom;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 80%;
+	text-decoration: none;
+}
+a[target='_blank']:after :hover {
+	text-decoration: none;
 }
 
 /* em {
@@ -74,8 +85,11 @@ a:focus {
 .secondary-color {
 	color: var(--secondary-color);
 }
+.text-white {
+	color: #ffffff !important;
+}
 strong {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .figure-caption {
@@ -121,7 +135,7 @@ section {
 }
 
 section .page-nav {
-	border-top: 1px solid var(--color-light);
+	border-top: 1px solid var(--secondary-color-light);
 	padding: 40px 0;
 	flex-direction: row;
 }
