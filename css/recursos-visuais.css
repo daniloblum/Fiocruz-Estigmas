@@ -246,6 +246,7 @@ Accordion
 	font-weight: 600;
 	color: var(--primary-color);
 	text-decoration: none !important;
+	padding-right: 60px;
 }
 
 /* --------------------------------
@@ -515,7 +516,7 @@ Destaques
 
 .olho-de-texto p {
 	color: var(--primary-color-dark);
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 	/* padding:30px; */
 	text-align: center;
@@ -1121,7 +1122,6 @@ Listas
 	background: transparent;
 	border: transparent;
 	border-radius: 6px;
-	margin-bottom: 0.5rem;
 	padding: 0.4rem 0;
 	font-weight: 300;
 }
