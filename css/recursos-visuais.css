@@ -2,13 +2,30 @@
 
 /* Página de recursos */
 
+#page-content {
+	position: relative;
+}
 #page-content:before {
-	content: 'face';
-	background: #3c7d1b;
-	width: 200px;
+	content: '';
+	background: url(../images/page-content-bg1.png);
+	background-repeat: no-repeat;
+	width: 500px;
 	height: 200px;
-	position: fixed;
-	left: 50%;
+	position: absolute;
+	top: 50px;
+	right: 0%;
+	z-index: -1;
+}
+#page-content:after {
+	content: '';
+	background: url(../images/page-content-bg2.png);
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 200px;
+	position: absolute;
+	top: 500px;
+	left: 0%;
+	z-index: -1;
 }
 section {
 	padding: 50px 0 30px;
