@@ -52,14 +52,14 @@
 .sidebar__section {
 	padding: 20px 0;
 }
-.sidebar__section h2 {
+.sidebar__section h3 {
 	display: block;
 	color: var(--secondary-color-extra-light) !important;
 	line-height: 1.25;
 	font-weight: 500;
 	padding: 0 20px;
 }
-.sidebar__section h2 span {
+.sidebar__section h3 span {
 	display: block;
 	font-family: 'Roboto', sans-serif;
 	color: var(--secondary-color-extra-light) !important;
