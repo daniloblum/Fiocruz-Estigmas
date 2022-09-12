@@ -1,11 +1,38 @@
 .header {
-	background-image: url(../images/header-tarja.jpg);
-	height: 350px;
+	background-color: var(--primary-color);
+	height: 410px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
-	margin-bottom: 50px;
+}
+.header::before {
+	content: '';
+	background-image: url(../images/tarja-interna-esq.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right top;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	/* background-color: var(--primary-color-light); */
+	width: 30%;
+	height: 100%;
+}
+.header::after {
+	content: '';
+	background-image: url(../images/tarja-interna-dir.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left top;
+	position: absolute;
+	display: block;
+	top: 0;
+	right: 0;
+	/* background-color: var(--primary-color-light); */
+	width: 30%;
+	height: 100%;
 }
 .header__inner {
 	height: 100%;
@@ -27,58 +54,21 @@
 	color: #ffffff;
 	padding: 0;
 	margin: 0;
-	text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
 	font-weight: 700;
 	font-size: 3rem;
 }
 .header__title h2 span {
 	display: block;
-	font-family: 'Patrick Hands', 'Roboto', sans-serif;
+	font-family: 'DM Sans Bold', sans-serif;
 	margin-bottom: 1rem;
 	color: #ffffff;
 	font-weight: 400;
 	font-size: 2rem;
 }
-.image1 {
-	position: absolute;
-	top: -20%;
-	right: 0%;
-	/* background-color: var(--primary-color-light); */
-	width: 100%;
-	height: auto;
-}
-
-.image2 {
-	position: absolute;
-	bottom: 5%;
-	left: -30%;
-	background-color: var(--primary-color-light);
-	width: auto;
-	height: auto;
-	border-radius: 50%;
-	mix-blend-mode: multiply;
-}
-.image3 {
-	position: absolute;
-	bottom: -40%;
-	left: -40%;
-	background-color: rgb(141, 212, 73, 50%);
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	mix-blend-mode: multiply;
-}
-
 /* Medium devices (tablets, up to 992px) */
 @media (max-width: 991.9px) {
 	.header {
-		margin-bottom: 30px;
 		background-size: auto 400px;
-	}
-	.image1 {
-		bottom: 0;
-		right: 0;
-		width: 30%;
 	}
 }
 

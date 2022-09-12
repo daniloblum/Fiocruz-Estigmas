@@ -4,8 +4,12 @@
 
 #page-content {
 	position: relative;
+	background-image: url(../images/page-content-bg1.png);
+	background-repeat: no-repeat;
+	padding-top: 50px;
 }
-#page-content:before {
+
+/* #page-content:before {
 	content: '';
 	background: url(../images/page-content-bg1.png);
 	background-repeat: no-repeat;
@@ -28,7 +32,7 @@
 	top: 500px;
 	left: 0%;
 	z-index: -1;
-}
+} */
 section {
 	padding: 50px 0 30px;
 }

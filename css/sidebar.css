@@ -16,7 +16,7 @@
 	color: var(--secondary-color-extra-light);
 } */
 .sidebar__section--contrast {
-	background-color: var(--secondary-color);
+	background-color: rgba(0, 0, 0, 0.15);
 }
 .sidebar__inner {
 	padding: 0;
@@ -24,7 +24,7 @@
 	transform: translate(0, 0);
 	transform: translate3d(0, 0, 0);
 	will-change: position, transform;
-	background-color: var(--secondary-color-dark);
+	background-color: var(--secondary-color);
 	min-height: 100vh;
 }
 .sidebar__inner hr {
@@ -32,14 +32,14 @@
 	margin: 0px 20px;
 }
 .sidebar__header {
-	padding: 40px 20px;
+	padding: 30px 20px;
 }
 .sidebar__header h1 {
 	display: block;
 	color: var(--secondary-color-extra-light) !important;
 	margin-bottom: 0;
 	line-height: 1.25;
-	font-size: 2rem;
+	font-size: 2.25rem;
 }
 .sidebar__header h1 span {
 	display: block;
@@ -48,6 +48,7 @@
 	margin: 10px 0;
 	line-height: 1.5;
 	font-weight: 500;
+	font-size: 1.5rem;
 }
 .sidebar__section {
 	padding: 20px 0;
