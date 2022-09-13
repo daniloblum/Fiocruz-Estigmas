@@ -1027,8 +1027,7 @@ Flipcards 2.0
 	height: 100%;
 	top: 0;
 	left: 0;
-	/* background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.6) 100%); */
-	background: linear-gradient(180deg, rgba(120, 191, 59, 0.35) 0%, rgba(0, 0, 0, 0.18) 50%, rgba(74, 167, 1, 1) 100%);
+	background: linear-gradient(180deg, rgba(134, 101, 126, 0.35) 0%, rgba(0, 0, 0, 0.18) 50%, rgba(178, 121, 119, 1) 100%);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -1108,6 +1107,7 @@ Flipcards 2.0
 /*Habilita o Scroll*/
 .flip-card .flip-card-front .card-text {
 	overflow-y: hidden;
+	color:#FFF;
 }
 
 .flip-card .flip-card-back .card-text {
