@@ -136,33 +136,32 @@ pre {
 
 .heading__block .heading__before {
 	display: block;
-	font-size: 1.75rem;
-	font-family: 'Patrick Hands', 'Roboto', sans-serif;
+	font-size: 1.25rem;
+	font-family: 'Noto Sans Semibold', sans-serif;
 	text-transform: uppercase;
 	line-height: 1;
 	color: var(--secondary-color);
 	margin-bottom: 1rem;
 }
-.heading__block .heading__before::after {
+/* .heading__block .heading__before::after {
 	content: url(../images/head-block-line-small.svg);
 	display: block;
-}
+} */
 .heading__block .heading__title {
 	color: var(--secondary-color);
-	font-weight: 700;
 	font-size: 2.5rem;
 }
 .heading__block p,
 .heading__lead {
 	color: var(--text-color-light);
 }
-/* .heading__block::after {
+.heading__block::after {
 	content: '';
 	display: block;
 	width: 40px;
 	border-top: 2px solid var(--primary-color);
 	margin: 20px 0;
-} */
+}
 
 /* -------------------------------- 
 
@@ -472,7 +471,7 @@ blockquote {
   border-left: 2px solid var(--secondary-color) !important;
   border-radius: 0 0 0 8px; */
 	margin: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'DM Sans Regular', sans-serif;
 	font-size: 1.25rem;
 	line-height: 1.5;
 	font-weight: 300;
@@ -751,7 +750,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
 	border-radius: 50%;
 }
 .green-audio-player .controls {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'DM Sans Regular', sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	color: #55606e;
@@ -1107,7 +1106,7 @@ Flipcards 2.0
 /*Habilita o Scroll*/
 .flip-card .flip-card-front .card-text {
 	overflow-y: hidden;
-	color:#FFF;
+	color: #fff;
 }
 
 .flip-card .flip-card-back .card-text {
@@ -2589,7 +2588,7 @@ HORIZONTAL TIMELINE 1
 .cd-horizontal-timeline .events-content h2 {
 	font-weight: bold;
 	font-size: 2.6rem;
-	font-family: 'Playfair Display', serif;
+	font-family: 'DM Sans Regular', sans-serif;
 	font-weight: 700;
 	line-height: 1.2;
 }

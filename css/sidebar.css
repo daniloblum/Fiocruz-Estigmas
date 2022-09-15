@@ -39,15 +39,14 @@
 	color: var(--secondary-color-extra-light) !important;
 	margin-bottom: 0;
 	line-height: 1.25;
-	font-size: 2.25rem;
+	font-size: 2rem;
 }
 .sidebar__header h1 span {
 	display: block;
 	color: var(--secondary-color-extra-light) !important;
-	font-family: 'Noto Sans', sans-serif !important;
+	font-family: 'Noto Sans Semibold', sans-serif !important;
 	margin: 10px 0;
 	line-height: 1.5;
-	font-weight: 500;
 	font-size: 1.5rem;
 }
 .sidebar__section {
@@ -57,22 +56,19 @@
 	display: block;
 	color: var(--secondary-color-extra-light) !important;
 	line-height: 1.25;
-	font-weight: 500;
 	padding: 0 20px;
 }
 .sidebar__section h3 span {
 	display: block;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Noto Sans Semibold', sans-serif;
 	color: var(--secondary-color-extra-light) !important;
 	margin-bottom: 10px;
-	font-weight: 500;
 }
 .sidebar__section.classes .h6 {
 	display: block;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Noto Sans Semibold', sans-serif;
 	color: var(--secondary-color-extra-light) !important;
 	margin-bottom: 10px;
-	font-weight: 500;
 	padding: 0 20px;
 }
 .sidebar__btn,

@@ -62,16 +62,16 @@
 	src: url('../fonts/NotoSans-SemiBoldItalic.ttf');
 }
 @font-face {
-	font-family: 'Noto Sans ExtraBold';
+	font-family: 'Noto Sans Bold';
 	font-style: normal;
-	font-weight: 800;
-	src: url('../fonts/NotoSans-ExtraBold.ttf');
+	/* font-weight: 700; */
+	src: url('../fonts/NotoSans-Bold.ttf');
 }
 @font-face {
-	font-family: 'Noto Sans ExtraBoldItalic';
+	font-family: 'Noto Sans BoldItalic';
 	font-style: italic;
-	font-weight: 800;
-	src: url('../fonts/NotoSans-ExtraBoldItalic.ttf');
+	font-weight: 700;
+	src: url('../fonts/NotoSans-BoldItalic.ttf');
 }
 
 /* DM Sans */
