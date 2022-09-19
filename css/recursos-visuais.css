@@ -1159,6 +1159,8 @@ Listas
 	border-radius: 6px;
 	padding: 0.4rem 0;
 	font-weight: 300;
+	font-family: 'DM Sans Regular', sans-serif;
+	color: var(--text-color);
 }
 .obj-lista ul.list-group {
 	list-style: none;

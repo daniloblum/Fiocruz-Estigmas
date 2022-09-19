@@ -2404,6 +2404,92 @@ div class="card-body <strong>justify-content-center</strong> d-flex flex-column"
                 </div>
             </div>
         </section>
+        
+        <!-- Bloco - Tooltip -->
+        <section id="modais">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <!-- Heading Block (Título h2 ou h3 + Lead (se houver)) -->
+                        <div class="heading__block">
+                            <span class="heading__before">Recurso 13</span>
+                            <h3>Tooltip</h3>
+                            <p class="heading__lead">Utilizado para abrir um texto curto sobre um conteúdo através de hover.</p>
+                        </div>
+                        <!-- Fim do Heading Block (Título h2 ou h3 + Lead (se houver)) -->
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8">
+
+                        <p>Inserir o conteúdo a receber o hover com a tag <strong>span</strong> com a classe <strong>tooltip-text</strong>.<br>
+                            Dentro da tag inserir <strong>data-tooltip="Texto para o tooltip"</strong>.<br>
+                            Por default ele surge no topo do conteúdo dentro da tag <strong>span</strong>.</p>
+                            <!-- Caso queria direcionar, inserir <strong>data-tooltip-location=""</strong> (top, bottom, left e right). -->
+
+                        <p>Exemplo de <span class="tooltip-text" data-tooltip="Texto para tooltip">tooltip</span></p>
+                        <!-- <p>Exemplo de <span class="tooltip-text" data-tooltip="Texto para tooltip" data-tooltip-location="right">tooltip a direita</span></p>
+                        <p>Exemplo de <span class="tooltip-text" data-tooltip="Texto para tooltip" data-tooltip-location="left">tooltip a esquerda</span></p>
+                        <p>Exemplo de <span class="tooltip-text" data-tooltip="Texto para tooltip" data-tooltip-location="bottom">tooltip abaixo</span></p>
+                        <p>Exemplo de <span class="tooltip-text" data-tooltip="Texto para tooltip" data-tooltip-location="top">tooltip a cima</span></p> -->
+
+                        <!-- Modal 1 -->
+                        <div class="modal fade show" id="modal1" tabindex="-1" aria-labelledby="modal1-titulo"
+                            aria-modal="true" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="h4 modal-title" id="modal1">Contraindicações</span>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <!-- Lista Simples -->
+                                        <div class="row justify-content-center">
+                                            <div class="obj-lista col-12">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Pessoas menores de 18 anos de idade;</li>
+                                                    <li class="list-group-item">Gestantes;</li>
+                                                    <li class="list-group-item">Para aquelas pessoas que já apresentaram uma reação anafilática confirmada a uma dose anterior de uma vacina covid-19;</li>
+                                                    <li class="list-group-item">Pessoas que apresentaram uma reação anafilática confirmada a qualquer componente da(s) vacina(s) (checar componentes na bula da vacina ou em informes técnicos específicos).</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <!-- Fim de Lista Simples -->
+
+                                        <p class="mt-4"><em>Como as vacinas covid-19 não puderam ser testadas em
+                                                todos os grupos de
+                                                pessoas, pode haver algumas precauções ou contraindicações
+                                                temporárias até que surjam mais evidências e se saiba mais sobre
+                                                as vacinas e que sejam administradas de forma mais ampla a mais
+                                                pessoas. Após os resultados dos estudos clínicos de fase 3,
+                                                essas precauções e contraindicações poderão ser alteradas.</em>
+                                        </p>
+
+                                        <p class="fonte">Conforme o <a
+                                                href='https://www.gov.br/saude/pt-br/coronavirus/vacinas/plano-nacional-de-operacionalizacao-da-vacina-contra-a-covid-19'
+                                                target='_blank'>Plano Nacional de Operacionalização da Vacinação
+                                                contra a COVID-19</a></p>
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <a href="#" data-dismiss="modal"
+                                            class="button-primary"><span>Fechar</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fim do Modal 1 -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Bloco - Podcast -->
         <section id="podcast">

@@ -5,6 +5,7 @@
 @import 'fonts.css';
 @import 'buttons.css';
 @import 'recursos-visuais.css';
+@import 'tooltip.css';
 
 * {
 	margin: 0;
