@@ -55,3 +55,9 @@ function mapHoverOut(item) {
 		mapa.style.fill = '#71a94a';
 	}
 }
+
+// Tooltip ativo na página
+
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip();
+});

@@ -6,6 +6,7 @@
 @import 'buttons.css';
 @import 'recursos-visuais.css';
 @import 'tooltip.css';
+@import 'exercise.css';
 
 * {
 	margin: 0;
@@ -125,6 +126,11 @@ body {
 
 .main {
 	position: relative;
+}
+
+/* retira a margin de todos os últimos parágrafos */
+div p:last-child {
+	margin-bottom: 0;
 }
 
 section {
