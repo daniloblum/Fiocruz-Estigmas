@@ -38,7 +38,7 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 			event.classList.remove('mcq__answers--selected');
 			event.classList.add('mcq__answers--incorrect');
 
-			submitFeedback.innerHTML = `<span class="material-symbols-rounded">cancel</span>Resposta errada! <br class="d-lg-none" />Tente novamente.`;
+			submitFeedback.innerHTML = `<span class="material-symbols-rounded">cancel</span><span class="feedback__content">Resposta errada! <br class="d-lg-none" />Tente novamente.</span>`;
 			submitFeedback.classList.remove('d-none', 'mcq__submit__feedback--correct');
 			submitFeedback.classList.add('mcq__submit__feedback--incorrect');
 		}
@@ -47,7 +47,7 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 			event.classList.remove('mcq__answers--selected');
 			event.classList.add('mcq__answers--correct');
 
-			submitFeedback.innerHTML = `<span class="material-symbols-rounded">check_circle</span>Resposta correta! <br class="d-lg-none" />Você acertou em ${score} tentativa(s).`;
+			submitFeedback.innerHTML = `<span class="material-symbols-rounded">check_circle</span><span class="feedback__content">Resposta correta! <br class="d-lg-none" />Você acertou em ${score} tentativa(s).</span>`;
 			submitFeedback.classList.remove('d-none', 'mcq__submit__feedback--incorrect');
 			submitFeedback.classList.add('mcq__submit__feedback--correct');
 		}
