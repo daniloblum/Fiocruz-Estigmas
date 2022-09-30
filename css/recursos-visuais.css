@@ -111,13 +111,17 @@ section {
 	background-color: var(--primary-color) !important;
 }
 
-a.bg-primary:focus, a.bg-primary:hover {
+a.bg-primary:focus,
+a.bg-primary:hover {
 	background-color: var(--primary-color-dark) !important;
 }
 
-.bg-primary-extra-dark {background-color:#e6658d;}
+.bg-primary-extra-dark {
+	background-color: #e6658d;
+}
 
-a.bg-primary-extra-dark:focus, a.bg-primary-extra-dark:hover {
+a.bg-primary-extra-dark:focus,
+a.bg-primary-extra-dark:hover {
 	background-color: #ba4a78 !important;
 }
 
@@ -125,7 +129,8 @@ a.bg-primary-extra-dark:focus, a.bg-primary-extra-dark:hover {
 	background-color: var(--secondary-color) !important;
 }
 
-a.bg-secondary:focus, a.bg-secondary:hover {
+a.bg-secondary:focus,
+a.bg-secondary:hover {
 	background-color: var(--secondary-color-dark) !important;
 }
 
@@ -144,8 +149,8 @@ a.bg-secondary:focus, a.bg-secondary:hover {
 .bg-secondary::before,
 .bg-secondary::after,
 .bg-primary-extra-dark::before,
-.bg-primary-extra-dark::after{
-	background-color:#fff !important;
+.bg-primary-extra-dark::after {
+	background-color: #fff !important;
 }
 
 pre {
@@ -1261,6 +1266,7 @@ Listas
 .obj-lista ul.list-group .list-group-item[list-style='none']:before {
 	font-family: 'Material Symbols Rounded';
 	content: '';
+	margin: 0;
 	/* list-style: none; */
 }
 
