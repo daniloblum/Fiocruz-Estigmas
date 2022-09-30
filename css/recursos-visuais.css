@@ -198,9 +198,16 @@ Quadro de objetivo da aula
 
 -------------------------------- */
 .objetivo-aula {
+	background-color: rgb(251 251 251 / 50%);
 	border: 2px solid var(--primary-color-dark);
 	border-radius: 8px;
-	padding: 30px;
+	padding: 20px;
+}
+@media (min-width: 768px) {
+	.objetivo-aula {
+		background-color: transparent;
+		padding: 30px;
+	}
 }
 
 /* -------------------------------- 
@@ -670,11 +677,12 @@ Destaques
 	.box-title {
 		padding: 15px;
 	}
-	.box-title .h5 {
-		padding-left: 35px;
+	.box-title .h4 {
+		padding-left: 40px;
 	}
 	.card-box .box-title__icone {
-		left: -30px;
+		left: -20px;
+		top: -30px;
 	}
 }
 
