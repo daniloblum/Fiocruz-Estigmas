@@ -144,6 +144,9 @@ header {
 		align-items: center;
 	}
 
+	#course-program .card .card-header {
+		flex: 1 1 20%;
+	}
 	#course-program .card .card-header :first-child {
 		margin-bottom: 0.75rem;
 		font-size: 1.15rem;
