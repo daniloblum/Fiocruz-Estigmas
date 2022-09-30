@@ -33,7 +33,7 @@ h6 {
 .h5,
 .h6 {
 	display: block;
-	font-family: 'Noto Sans bold', sans-serif;
+	font-family: 'Noto Sans Bold', sans-serif;
 	color: var(--secondary-color);
 	/* margin-bottom: 2rem !important; */
 }

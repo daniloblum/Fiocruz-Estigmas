@@ -64,7 +64,7 @@
 @font-face {
 	font-family: 'Noto Sans Bold';
 	font-style: normal;
-	/* font-weight: 700; */
+	font-weight: 700;
 	src: url('../fonts/NotoSans-Bold.ttf');
 }
 @font-face {
