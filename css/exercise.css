@@ -64,6 +64,9 @@
 	padding: 30px 0;
 	border-top: 1px solid var(--secondary-color-light);
 }
+.mcq-card .mcq__submit button {
+	overflow-wrap: normal;
+}
 .mcq-card .mcq__submit button[aria-disabled='true'] {
 	background-color: #909599;
 	border-color: #909599;
@@ -95,6 +98,9 @@
 }
 
 @media (min-width: 768px) {
+	.mcq-card .mcq__submit .mcq__submit--feedback {
+		margin-bottom: 0;
+	}
 	.mcq-card .mcq__submit {
 		flex-direction: row;
 	}
