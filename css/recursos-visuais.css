@@ -185,10 +185,12 @@ pre {
 	color: var(--secondary-color);
 	font-size: 2.5rem;
 }
-#page-content .heading__block .heading__title {
+
+#page-content .heading__block h5.heading__title {
 	color: var(--secondary-color);
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
+
 .heading__block p,
 .heading__lead {
 	color: var(--text-color-light);
@@ -214,7 +216,7 @@ Quadro de objetivo da aula
 }
 @media (min-width: 768px) {
 	.objetivo-aula {
-		background-color: transparent;
+		background-color: #fbfbfb;
 		padding: 30px;
 	}
 }
