@@ -68,6 +68,11 @@ a[target='_blank']:after {
 	font-size: 80%;
 	text-decoration: none;
 }
+
+figure a[target="_blank"]::after {
+	display:none;
+}
+
 a[target='_blank']:after :hover {
 	text-decoration: none;
 }

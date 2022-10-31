@@ -228,7 +228,9 @@ Abas
 -------------------------------- */
 
 .abas .nav-tabs {
-	border-bottom: 1px solid var(--color-light);
+	/* border-bottom: 1px solid var(--color-light); */
+	border-bottom: 1px solid var(--primary-color);
+	margin-bottom: 0 !important;
 }
 
 .abas .nav-link {
@@ -248,6 +250,7 @@ Abas
 .abas .nav-tabs .nav-link:hover,
 .nav-tabs .nav-link:focus {
 	border-color: #e9ecef #e9ecef #dee2e6;
+	border-bottom: transparent;
 	background-color: var(--color-light-hover);
 	color: var(--primary-color);
 }
@@ -265,7 +268,9 @@ Abas
 }
 
 .abas .tab-content {
-	border-bottom: 1px solid #e9ecef;
+	/* border-bottom: 1px solid #e9ecef; */
+	background-color: #eef2f6;
+	padding: 1.5rem;
 }
 
 .boot-tabs {
@@ -1339,12 +1344,12 @@ Listas
 .obj-lista ol.list-group .list-group-item {
 	display: list-item;
 	padding-left: 10px;
-	counter-increment: contador-ul;
+	counter-increment: contador-ol;
 }
 
 .obj-lista ol.list-group .list-group-item:before {
 	background-color: var(--primary-color);
-	content: counter(contador-ul);
+	content: counter(contador-ol);
 	margin-right: 0.8rem;
 	border-radius: 50%;
 	color: #fff;
@@ -1356,6 +1361,14 @@ Listas
 	display: inline-block;
 	box-sizing: border-box;
 	line-height: 30px;
+}
+
+.obj-lista ol.list-group .list-group-item[tipo="I"]:before{
+	content: counter(contador-ol, upper-roman);
+}
+
+.obj-lista ol.list-group .list-group-item[tipo="a"]:before{
+	content: counter(contador-ol, lower-alpha);
 }
 
 /* ----------------------------------------------------------------
