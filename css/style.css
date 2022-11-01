@@ -22,7 +22,7 @@ h5,
 h6 {
 	font-family: 'Noto Sans Bold', sans-serif;
 	color: var(--secondary-color);
-	margin-bottom: 2rem;
+	margin-bottom: 2rem !important;
 	font-weight: 700;
 }
 

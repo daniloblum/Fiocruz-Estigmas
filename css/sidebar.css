@@ -7,6 +7,16 @@
 	font-size: 1rem;
 	z-index: 99;
 }
+
+.sidebar .h1,
+.sidebar .h2,
+.sidebar .h3,
+.sidebar .h4,
+.sidebar .h5,
+.sidebar .h6 {
+	margin-bottom: .5rem !important;
+}
+
 /* .sidebar .h6 {
 	font-weight: 400;
 	color: var(--secondary-color-extra-light);
