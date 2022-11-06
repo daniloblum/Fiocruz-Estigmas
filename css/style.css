@@ -69,8 +69,8 @@ a[target='_blank']:after {
 	text-decoration: none;
 }
 
-figure a[target="_blank"]::after {
-	display:none;
+figure a[target='_blank']::after {
+	display: none;
 }
 
 a[target='_blank']:after :hover {
@@ -103,7 +103,7 @@ strong {
 	font-size: 75%;
 	color: #6c757d;
 	text-align: center;
-	margin-bottom: 0.75rem;
+	margin-bottom: 0.5rem;
 }
 
 .figure-caption .fonte,
