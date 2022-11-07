@@ -22,7 +22,7 @@ h5,
 h6 {
 	font-family: 'Noto Sans Bold', sans-serif;
 	color: var(--secondary-color);
-	margin-bottom: 2rem !important;
+	margin-bottom: 2rem;
 	font-weight: 700;
 }
 
@@ -35,7 +35,7 @@ h6 {
 	display: block;
 	font-family: 'Noto Sans Bold', sans-serif;
 	color: var(--secondary-color);
-	/* margin-bottom: 2rem !important; */
+	margin-bottom: 2rem;
 }
 
 p {
@@ -134,7 +134,7 @@ body {
 }
 
 /* retira a margin de todos os últimos parágrafos */
-div p:last-child {
+div p:last-child:not(.h1, .h2, .h3, .h4, .h5, .h6) {
 	margin-bottom: 0;
 }
 

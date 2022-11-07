@@ -8,15 +8,6 @@
 	z-index: 99;
 }
 
-.sidebar .h1,
-.sidebar .h2,
-.sidebar .h3,
-.sidebar .h4,
-.sidebar .h5,
-.sidebar .h6 {
-	margin-bottom: .5rem !important;
-}
-
 /* .sidebar .h6 {
 	font-weight: 400;
 	color: var(--secondary-color-extra-light);
@@ -55,7 +46,7 @@
 	display: block;
 	color: var(--secondary-color-extra-light) !important;
 	font-family: 'Noto Sans Semibold', sans-serif !important;
-	margin: 10px 0;
+	margin: 10px 0 0 0;
 	line-height: 1.5;
 	font-size: 1.5rem;
 }
@@ -67,6 +58,7 @@
 	color: var(--secondary-color-extra-light) !important;
 	line-height: 1.25;
 	padding: 0 20px;
+	margin: 0;
 }
 .sidebar__section h3 span {
 	display: block;

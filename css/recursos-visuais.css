@@ -52,7 +52,11 @@ section {
 	border-radius: 0.75rem;
 }
 
-.card-body {
+.card .card-header {
+	background: none;
+}
+
+.card .card-body {
 	padding: 1.5rem;
 }
 .card.shadow {
