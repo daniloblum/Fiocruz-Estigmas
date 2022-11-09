@@ -19,7 +19,8 @@
 .mcq-card .mcq__answers ul li {
 	padding: 10px 20px;
 	margin-bottom: 20px;
-	border: 2px solid var(--primary-color-light);
+	border: 2px solid var(--color-light);
+	background-color: var(--color-light);
 	border-radius: 8px;
 	cursor: pointer;
 	font-size: 1rem;
@@ -29,12 +30,12 @@
 	margin-bottom: 0;
 }
 .mcq-card .mcq__answers ul li:not(.mcq__answers--blocked, .mcq__answers--selected, .mcq__answers--correct, .mcq__answers--incorrect):hover {
-	border-color: var(--primary-color-dark);
+	border-color: var(--secondary-color);
 	/* background-color: var(--color-light-hover); */
 }
 .mcq-card .mcq__answers ul li.mcq__answers--selected {
 	background-color: var(--secondary-color-extra-light);
-	border-color: var(--secondary-color-light);
+	border-color: var(--secondary-color);
 	color: var(--secondary-color-dark);
 }
 .mcq-card .mcq__answers ul li.mcq__answers--correct {
