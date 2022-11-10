@@ -139,6 +139,15 @@ a.bg-secondary:hover {
 	background-color: var(--secondary-color-dark) !important;
 }
 
+.bg-secondary-extra-dark {
+	background-color: var(--secondary-color-extra-dark) !important;
+}
+
+a.bg-secondary-extra-dark:focus, 
+a.bg-secondary-extra-dark:hover {
+	background-color: #331824 !important;
+}
+
 .bg-secondary-light {
 	background-color: var(--secondary-color-extra-light) !important;
 }
@@ -154,7 +163,9 @@ a.bg-secondary:hover {
 .bg-secondary::before,
 .bg-secondary::after,
 .bg-primary-extra-dark::before,
-.bg-primary-extra-dark::after {
+.bg-primary-extra-dark::after,
+.bg-secondary-extra-dark::before,
+.bg-secondary-extra-dark::after{
 	background-color: #fff !important;
 }
 
