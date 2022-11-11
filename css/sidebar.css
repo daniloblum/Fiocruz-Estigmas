@@ -60,13 +60,7 @@
 	padding: 0 20px;
 	margin: 0;
 }
-.sidebar__section h3 span {
-	display: block;
-	font-family: 'Noto Sans Semibold', sans-serif;
-	color: var(--secondary-color-extra-light) !important;
-	margin-bottom: 10px;
-}
-.sidebar__section.classes .h6 {
+.sidebar__section .pre-title {
 	display: block;
 	font-family: 'Noto Sans Semibold', sans-serif;
 	color: var(--secondary-color-extra-light) !important;
