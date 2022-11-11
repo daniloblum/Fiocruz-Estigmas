@@ -1148,6 +1148,8 @@ Listas
 	display: inline-block;
 	box-sizing: border-box;
 	line-height: 30px;
+	font-family: 'Noto Sans Regular', sans-serif;
+	font-size: 100%;
 }
 
 .obj-lista ol.list-group .list-group-item[tipo='I']:before {
@@ -1166,6 +1168,7 @@ Modal
 
 .modal .modal-title {
 	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .modal .modal-body {
@@ -1595,9 +1598,9 @@ Timeline
 	}
 }
 
-.cd-timeline {
+/* .cd-timeline {
 	overflow: hidden;
-}
+} */
 
 .cd-timeline p {
 	font-size: 1.2rem;
@@ -1614,7 +1617,7 @@ Timeline
 
 .cd-timeline__container {
 	position: relative;
-	width: 90%;
+	width: 100%;
 	max-width: 1170px;
 	margin: 0 auto;
 	padding: 2em 0;
@@ -2649,7 +2652,6 @@ HORIZONTAL TIMELINE 1
 		transform: translateX(0%);
 	}
 }
-
 
 /* -------------------------------------------------
 
