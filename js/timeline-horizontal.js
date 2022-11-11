@@ -8,7 +8,8 @@
     arrowNext = document.querySelector(".timeline-horizontal2 .arrows .arrow__next"),
     firstItem = document.querySelector(".timeline-horizontal2 li:first-child"),
     lastItem = document.querySelector(".timeline-horizontal2 li:last-child"),
-    xScrolling = 280,
+    // xScrolling = 280,
+    xScrolling = 560,
     disabledClass = "disabled";
 
   // START
@@ -25,7 +26,7 @@
   function setEqualHeights(el) {
     let counter = 0;
     for (let i = 0; i < el.length; i++) {
-      const singleHeight = el[i].offsetHeight;
+      const singleHeight = el[i].offsetHeight + 50;
 
       if (counter < singleHeight) {
         counter = singleHeight;
