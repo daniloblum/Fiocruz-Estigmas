@@ -972,7 +972,7 @@ Flipcards 2.0
 
 /*Fundos para flipcard*/
 .flip-card .fundo1 {
-	background-image: url(../../images/recursos-visuais/fundo-flipcard.jpg);
+	background-image: url(../images/recursos-visuais/fundo-flipcard.jpg);
 	background-size: cover;
 }
 
