@@ -143,7 +143,7 @@ a.bg-secondary:hover {
 	background-color: var(--secondary-color-extra-dark) !important;
 }
 
-a.bg-secondary-extra-dark:focus, 
+a.bg-secondary-extra-dark:focus,
 a.bg-secondary-extra-dark:hover {
 	background-color: #331824 !important;
 }
@@ -165,7 +165,7 @@ a.bg-secondary-extra-dark:hover {
 .bg-primary-extra-dark::before,
 .bg-primary-extra-dark::after,
 .bg-secondary-extra-dark::before,
-.bg-secondary-extra-dark::after{
+.bg-secondary-extra-dark::after {
 	background-color: #fff !important;
 }
 
@@ -935,8 +935,9 @@ Flipcards 2.0
 	backface-visibility: hidden;
 }
 
-.flip-card-front .card-title {
+.flip-card-front .card-body :is(.card-title, p) {
 	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.35) !important;
+	color: #ffffff;
 }
 
 .flip-card-front .card-footer,
@@ -987,7 +988,7 @@ Flipcards 2.0
 }
 
 .flip-card-back .card-body {
-	padding-top: 0;
+	padding: 20px 0;
 }
 
 .flip-card-back .card-footer {
@@ -1004,17 +1005,16 @@ Flipcards 2.0
 }
 
 /*Habilita o Scroll*/
-.flip-card .flip-card-front .card-text {
+.flip-card .flip-card-front .scrollable {
 	overflow-y: hidden;
 	color: #fff;
 }
 
-.flip-card .flip-card-back .card-text {
+.flip-card .flip-card-back .scrollable {
 	text-align: left;
-	margin-bottom: 10px;
 	overflow-y: scroll;
-	padding: 1rem;
 	font-size: 1rem;
+	padding-right: 10px;
 }
 
 /* Customização do scroll: Para Firefox e edge*/
