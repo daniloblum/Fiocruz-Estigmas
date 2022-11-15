@@ -5,7 +5,6 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 		let answerOption = mcq.querySelectorAll('.mcq__answers li');
 		let submitButton = mcq.querySelector('.mcq__submit button');
 		let submitFeedback = mcq.querySelector('.mcq__submit--feedback');
-        let submitAnswerFeedback = mcq.querySelector('.mcq__answer--feedback');
 		let score = 0;
 
 		// Select option, clear the others and enable submit
@@ -51,10 +50,6 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 			submitFeedback.innerHTML = `<span class="material-symbols-rounded">check_circle</span><span class="feedback__content">Resposta correta! <br class="d-lg-none" />Você acertou em ${score} tentativa(s).</span>`;
 			submitFeedback.classList.remove('d-none', 'mcq__submit__feedback--incorrect');
 			submitFeedback.classList.add('mcq__submit__feedback--correct');
-
-            if (submitAnswerFeedback) {
-                submitAnswerFeedback.classList.remove('d-none'); 
-            }
 		}
 
 		function blockAnswerOption() {
@@ -105,10 +100,6 @@ let mcqCard = document.querySelectorAll('.mcq-card');
 				}
 				submitFeedback.classList.remove('mcq__submit__feedback--correct', 'mcq__submit__feedback--incorrect');
 				submitFeedback.classList.add('d-none');
-
-				if (submitAnswerFeedback) {
-                	submitAnswerFeedback.classList.add('d-none');
-				}
 			}
 		}
 	});
