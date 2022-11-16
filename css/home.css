@@ -10,37 +10,25 @@ body {
 
 header {
 	position: relative;
-	background-image: url(../images/home/tarja-capa.jpg);
-	background-size: cover;
-	background-position: top center;
-	height: 140vw;
+	background: var(--secondary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.main {
-	background: #fbfbfb url(../images/home/section-bg.png);
-	background-repeat: no-repeat;
-	background-position-y: 20%;
-	background-position-x: center;
-	background-size: 200%;
-	transform: translateY(-80px);
-}
-/* .main::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateZ(-1px) scale(2);
-    background-size: 100%;
-    z-index: -1;
-    background-image: url('http://www.shainblumphoto.com/wp-content/uploads/2016/02/dubai_1.jpg');
-  } */
-
-.header__title {
+header .header__title {
+	background-color: var(--secondary-color);
 	text-align: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 40px 10px;
 }
 
-.header__title .logo {
+header div {
+	height: 100%;
+}
+
+/* .header__title .logo {
 	display: inline-block;
 	padding: 15px 20px;
 	background-color: var(--primary-color-light);
@@ -50,36 +38,70 @@ header {
 
 .header__title .logo img {
 	height: 60px;
-}
+} */
 
 .header__title h1 {
 	font-size: 12vw;
 	font-family: 'Noto Sans Bold', sans-serif;
+	line-height: 0.95;
+	letter-spacing: -3px;
 	margin: 0 auto;
+	color: #ffffff;
+	text-shadow: 0 5px 0 rgba(90, 55, 81, 0.25);
+}
+.header__title h1 span {
+	display: block;
+	font-size: 6vw;
+	font-family: 'Noto Sans Bold', sans-serif;
+	line-height: 1.25;
+	letter-spacing: 0;
+	margin-top: 20px;
 }
 
 @media (min-width: 768px) {
 	header {
-		height: 70vw;
-	}
-	.header__title .logo {
-		margin: 0 auto 2vw;
+		/* height: 70vw; */
+		background: url(../images/home/tarja-capa.jpg);
+		background-size: cover;
+		background-position: top center;
 	}
 	.header__title h1 {
-		font-size: 6vw;
+		font-size: 60px;
+	}
+	.header__title h1 span {
+		font-size: 30px;
+		margin-top: 30px;
+		line-height: 1.1;
 	}
 }
 
 @media (min-width: 992px) {
 	header {
-		height: 30vw;
+		height: 500px;
 	}
-	.header__title .logo {
-		margin: 0 auto 2vw;
+	header .header__title {
+		padding: 60px 40px;
 	}
 	.header__title h1 {
-		font-size: 3.25vw;
+		font-size: 72px;
 	}
+	.header__title h1 span {
+		font-size: 36px;
+	}
+}
+@media (min-width: 1200px) {
+	header .header__title {
+		padding: 60px 120px;
+	}
+}
+
+.main {
+	background: #fbfbfb url(../images/home/section-bg.png);
+	background-repeat: no-repeat;
+	background-position-y: 20%;
+	background-position-x: center;
+	background-size: 200%;
+	transform: translateY(-80px);
 }
 
 #course-program hr {

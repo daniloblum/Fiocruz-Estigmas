@@ -1551,9 +1551,9 @@ Timeline
 	}
 }
 
-/* .cd-timeline {
+.cd-timeline {
 	overflow: hidden;
-} */
+}
 
 .cd-timeline p {
 	font-size: 1.2rem;
