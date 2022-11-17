@@ -51,7 +51,10 @@ a:visited {
 	font-weight: 500;
 	text-decoration: none;
 	font-family: 'DM Sans Regular', sans-serif;
+	word-wrap: break-word;
+	word-break: break-word;
 }
+
 a:hover,
 a:focus {
 	color: var(--primary-color-light);
