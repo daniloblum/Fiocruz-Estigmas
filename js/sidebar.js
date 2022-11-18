@@ -46,7 +46,7 @@ sidebarBtn.on('click', function () {
 		sidebarMobile.removeClass('sidebar--open');
 		sidebarMobile.addClass('sidebar--close');
 
-		sidebarBtn.css('background-color', '#3c7d1b');
+		sidebarBtn.css('background-color', '#bb6564');
 
 		btn.toggleClass('active');
 		btn.toggleClass('not-active');
@@ -58,7 +58,7 @@ sidebarBtn.on('click', function () {
 		sidebarMobile.removeClass('sidebar--close');
 		sidebarMobile.addClass('sidebar--open');
 
-		sidebarBtn.css('background-color', '#917434');
+		sidebarBtn.css('background-color', '#dc3545');
 
 		btn.toggleClass('active');
 		btn.toggleClass('not-active');
